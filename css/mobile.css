@@ -1,0 +1,116 @@
+/* About section */
+.about .showcase-imgA,
+.about .showcase-imgB {
+  width: 180px
+}
+
+.about button,
+.about h2 {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.about .showcase-imgB {
+  bottom: 120px;
+  top: 720px;
+  left: 40px
+}
+
+.about .showcase-imgA {
+  z-index: 3;
+  top: 700px;
+  right: 40px;
+}
+
+/* Meet Our Experts */
+.experts {
+  margin-top: 70px;
+}
+
+/* Gallery */
+.gallery {
+  margin-top: 70px;
+}
+
+/* Our Services */
+.services {
+  margin-top: 350px
+}
+
+/* Blog */
+.blog {
+  margin-top: 70px;
+  position: relative;
+  padding: 30px;
+  font-size: 0.85rem
+}
+
+.blog>div {
+  background: #F5D5D5;
+  padding: 2rem 0 3rem 0;
+  margin-top: 150px
+}
+
+.blog img {
+  position: absolute;
+  width: 200px;
+  left: calc((100% - 200px) / 2);
+  top: -150px
+}
+
+.blog > div > div:nth-child(2) {
+  padding-top: 90px
+}
+
+.blog a {
+  text-align: center;
+  display: block
+}
+
+/* Testimonials */
+.testimonials {
+  margin-top: 70px;
+  padding: 0 50px
+}
+
+.testimonials .row {
+  margin-top: 70px;
+  position: relative;
+}
+
+.testimonials .model-description {
+  transform: translate(0%, -10%)
+}
+
+.testimonials img {
+  position: absolute;
+  width: 100px;
+  top: -60px;
+  left: -40px
+}
+
+.testimonials>div {
+  background: #F5D5D5;
+  padding: 2.5rem 1rem;
+  background: #F2F2F2;
+  border: 10px solid #F5D5D5;
+}
+
+/* Contact Us */
+.contact {
+  margin-top: 70px
+}
+
+
+
+.contact .address {
+  width: 100%;
+  margin-bottom: 40px
+}
+
+/* Footer */
+.footer {
+  padding: 3rem 0 2rem 0;
+  margin-top: 70px;
+}

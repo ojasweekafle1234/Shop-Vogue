@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'Poppins';
+}
+
+.brand-color {
+  color: #FF4301;
+}
+
+.brand-color-bg {
+  background-color: #FF4301;
+}
+
+:root {
+  --brand-color: #FF4301;
+}
+
+
+
+/* header  */
+
+.header-bg-img {
+    background-image: url('../img/rayriar-6/Rectangle28.png');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.ACHIEVEMENTS {
+  background-image: url('../img/rayriar-6/Rectangle55.png');
+  background-position: center;
+  background-size: cover;
+  border-top-right-radius: 70px;
+  border-top-left-radius: 70px;
+}
+
+
+
+/* Back to top button*/
+
+.back-to-top {
+  position: fixed;
+  color: var(--brand-color);
+  bottom: 25px;
+  right: 25px;
+  font-size: 3.5rem;
+  z-index: 100;
+}
+
+.back-to-top__footer {
+  color: var(--brand-color);
+  bottom: 25px;
+  right: 25px;
+  font-size: 3.5rem;
+  z-index: 100;
+}
+
+.back-to-top .backIcon,
+.back-to-top__footer .backIcon {
+  background-color: white;
+  border: 2x solid var(--brand-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.back-to-top .backIcon:hover,
+.back-to-top__footer .backIcon:hover {
+  color: white;
+  background-color: var(--brand-color);
+}
+
+.back-to-top:hover .backIcon,
+.back-to-top__footer:hover .backIcon {
+  color: white;
+  background-color: var(--brand-color);
+}
+
+.back-to-top .backIcon:active .back-to-top__footer:active {
+  color: white;
+  background-color: var(--brand-color);
+}
+
+.back-to-top__footer {
+  position: absolute;
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .back-to-top {
+    display: none;
+  }
+
+  .back-to-top__footer {
+    position: absolute;
+    display: block;
+  }
+}
+
+.toggle-icon {
+  color: black
+}
+
+#nav {
+  display: none
+}
+
+.header-bg-img div div button {
+  border: 2px black solid
+}
+/* Back to top button*/
+
+/* Extra small devices (phones, 600px and down) */
+
+
+@media only screen and (max-width: 600px) {
+  .header-bg-img div {
+    padding-top: 40px
+  }
+  .header-bg-img div h1, h4, p {
+    text-align: center !important;
+  }
+
+  .header-bg-img div  p {
+    font-size: 1.3rem
+  }
+  
+  .header-bg-img div h1 {
+    font-size: 1.7rem
+  }
+
+  .header-bg-img div h4 {
+    width: 75%;
+    margin: 0 auto
+  }
+
+  .header-bg-img div div {
+    text-align: center !important;
+  }
+
+  .top-product h2 {
+    font-size: 1.7rem;
+  }
+
+  .top-product div div  h5 {
+    font-size: 1rem;
+  }
+
+  #head-1 {
+    font-size: 1rem;
+    text-align: center
+  }
+
+  #head-2 {
+    font-size: 1.5rem;
+    text-align: center
+    
+  }
+  .achievment-text {
+    width: 100%
+  }
+
+  .input-group {
+    width: 100%
+  } 
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .header-bg-img div h4 {
+    width: 50%;
+
+  }
+  .achievment-text {
+    width: 75%
+  }
+  .input-group {
+    width: 100%
+  } 
+}
+
+
+@media only screen and (min-width: 768px) {
+  .header-p {
+    text-align: left !important;
+  }
+
+  .input-group {
+    width: 50%
+  } 
+}
+
+
+@media only screen and (min-width: 992px) {
+  .header-p {
+    text-align: left !important;
+  }
+  .achievment-text {
+    width: 50%
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .header-p {
+    text-align: left !important;
+  }
+}
+
+
+/* main  */
+
+
+/* top beauty products */
+
+.custom-btn {
+  padding: 15px 25px;
+}
+
+.scale {
+  transform: scale(1.2);
+
+}
+
+.opacity-0 {
+  opacity:0!important;
+}
+.opacity-1 {
+  opacity:0.2!important;
+}
+.opacity-2 {
+  opacity:0.4!important;
+}
+.opacity-3 {
+  opacity:0.6!important;
+}
+.opacity-4 {
+  opacity:.8!important;
+}
+.opacity-5 {
+  opacity:1!important;
+}
+
+/* Maybe even support hover opacity shifts */
+.opacity-0h5 {
+  opacity:0!important;
+  transition: opacity .25s ease-in-out!important;
+  -moz-transition: opacity .25s ease-in-out!important;
+  -webkit-transition: opacity .25s ease-in-out!important;
+}
+.opacity-0h5:hover {
+  opacity:1!important;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.548);
+  border-top-right-radius: 70px;
+  border-top-left-radius: 70px;
+}
+
+
+/* Babatope */
+
+.bg-black{
+  background-color: black!important;
+}
+
+.line{
+  width: 1130px;
+  border: 1px solid rgb(214, 214, 214);
+}
+
+
+

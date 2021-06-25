@@ -1,0 +1,603 @@
+:root {
+    --primary-color: #E2B40E;
+    --light:  #fff;
+    --dark: #000;
+    --shadow: 0 2px 5px rgba(104, 104, 104, 0.8);
+}
+
+.body{
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+div {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.spa-time img,
+.gallery img,
+.testimonial img,
+.professional img {
+    box-shadow: var(--shadow);
+}
+
+.main-header a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+.btn {
+    background-color: var(--dark);
+    color: var(--primary-color);
+    padding: .6rem 1.3rem;
+    transition-property: transform;
+    transition-duration: 1s;
+
+}
+
+.btn:hover {
+    background-color: var(--light);
+    border: .5px var(--dark) solid;
+    border-radius: .35rem;
+    color: var(--dark);
+    font-weight: 500;
+    transform: rotateY(360deg);
+}
+
+/* Header section styling Starts*/
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.hero .main-header li {
+    padding-right: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.hero .main-header{
+    background-color: var(--primary-color);
+} 
+
+.hero .main-header h1 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #000000;
+}
+
+.hero .hero-pic {
+    background-image: url('https://res.cloudinary.com/opejinabdul/image/upload/v1593361418/image_3_w5znkh.png');
+    background-position: center center;
+    background-size: cover;
+    height: 919px;
+}
+
+.hero .hero-pic .hero-text h2 {
+    padding-top: 17rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+    animation: hero-text;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-text {
+    0% {
+        top: -500px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.hero .hero-pic .hero-text p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 1rem;
+    position: relative;
+    animation: hero-p;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-p {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.hero .hero-pic .hero-text a, 
+.experience #experience-word2 a {
+    animation: hero-button;
+    opacity: 0;
+    animation: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Header section styling ends*/
+
+/*Experience section styling starts*/
+.experience {
+    margin-top: 5.75rem;
+}
+
+.experience h3 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 29px;
+    padding-bottom: 1.5rem;
+    position: relative;
+    animation: experience-heading;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes experience-heading {
+    0% {
+        right: -1000px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.experience p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 1rem;
+    position: relative;
+    animation: experience-text;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes experience-text {
+    0% {
+        right: -1200px;
+    }
+    100% {
+        right: 0;
+    }
+}
+/*Experience section styling ends*/
+
+/*Spa-time styling starts*/
+    .spa-time {
+        margin-top: 5.75rem;
+    }
+
+    .spa-time h2 {
+        padding-bottom: 2rem;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        color: #E2B40E;
+    }
+
+    .spa-time .fa-envira {
+        margin-right: .5rem;
+    }   
+
+    .spa-time .service {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 15px;
+        text-align: center;
+        color: var(--primary-color);
+        padding-top: 1.75rem;
+    }
+
+    .spa-time .price {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 15px;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+/*Spa-time styling ends*/
+
+/*Gallery section styling starts*/
+    .gallery h2 {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        color: #E2B40E;
+        padding: 2rem 0;
+    }
+
+    .gallery #second-gallery {
+        margin-top: 1rem;
+    }
+
+    .gallery #first-gallery div,
+    .gallery #second-gallery div {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .gallery #middle-image {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        display: grid;
+        align-items: space-between;
+    }
+
+    .gallery #middle-image img {
+        margin-bottom: 1rem;
+    }
+
+    .gallery .btn {
+        padding: .8rem 0;
+        width:90%;
+    }
+/*Gallery section styling ends*/
+
+/*Our Profession styling starts*/
+    .professional {
+        margin: 6.75rem 0;
+    }
+
+    .professional h2 {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        text-align: center;
+        color: #E2B40E;
+        padding-bottom: 3rem;
+    }
+
+    .professional p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #000000;
+        padding-top: .85rem;
+    }
+/*Our Profession styling ends*/
+
+/*Testimonial Area section styling starts*/
+    .testimonial {
+        margin-top: 6.75rem;
+
+    }
+
+    .testimonial .first {
+        font-family: "Script MT Bold";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 15px;
+        text-align: center;
+        color: #3C3C3C;
+        font-style: italic;
+        padding-bottom: 1rem;
+    }
+
+    .testimonial .second {
+        background: var(--primary-color);
+        padding: 1rem 0;
+        margin-bottom: .7rem;
+    }
+
+    .testimonial .second p {
+        font-family: "Script MT Bold";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: var(--light);
+        font-style: italic;
+    }
+
+    .testimonial .second p:nth-child(2) {
+        font-family: Script MT Bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: var(--dark);
+    }
+
+    .testimonial #schedule {
+        margin-top: 1rem;
+        background-color: var(--dark);
+        color: var(--light);
+        padding-top: 1rem;
+        padding-bottom: .5rem;
+    }
+
+    .testimonial #schedule h3 {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 12px;
+        text-align: center;
+        color: var(--primary-color);
+    }
+    
+    .testimonial #schedule p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: center;
+        color: var(--light);
+    }
+/*Testimonial Area section styling ends*/
+
+/* Form Section styling starts*/
+.my-form {
+    padding: 2rem 0;
+    margin-bottom: 7rem;
+    margin-top: 6rem;
+} 
+
+.my-form h2 {
+    padding: 1rem 0;
+    color: var(--primary-color);
+}
+
+.my-form .form {
+    padding: 1rem;
+    padding-top: 3rem;
+    background-color: var(--primary-color);
+}
+
+.my-form .main-form {
+    margin-bottom: 2.5rem;
+}
+
+.my-form label {
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.my-form .form-btn {
+    width: 100%;
+}
+
+.my-form .main-form input {
+    padding: 1.65rem;
+}
+/* Form Section styling ends*/
+
+/* COMPANY AREA STYLING SECTION STARTS*/
+.company {
+    background-color: var(--dark);
+    color: var(--light);
+    padding-bottom: 1rem;
+}
+
+.company h1 {
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.company h3 {
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.company #company-elements #appointment h3 {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 10px;
+    text-align: center;
+    color: var(--primary-color);
+    padding-top: 2rem;
+}
+
+.company #company-elements #appointment p {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: var(--light);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.company h5 {
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding: 0;
+}
+
+.company .inline-form input {
+    padding: .5rem .6rem;
+    width: 100%;
+    border-radius: .3rem;
+}
+
+.company .btn-company {
+    padding: .65rem 1.4rem;
+    background-color: var(--primary-color);
+    color: var(--dark);
+    font-weight: 700;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.company #reach-us p {
+    line-height: 1.7;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: .3rem;
+}
+
+.company a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.company #services p:hover {
+    text-decoration: underline;
+    color: var(--light);
+}
+
+.company #reach-us .social-media {
+    padding: 1rem 0;
+}
+
+.company #reach-us .social-media a {
+    padding-right: .5rem;
+}
+
+.company #reach-us ion-icon{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.company #company-elements {
+    text-align: left;
+} 
+/* COMPANY AREA STYLING SECTION ENDS*/
+
+/*Main Footer*/
+.footer {
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1.5rem 0;
+}
+
+@media(max-width:1200px){
+     .gallery #middle-image .btn {
+        padding: .8rem 0;
+        width:100%;
+    }
+}
+
+@media(max-width: 991px) {
+    .experience #experience-word2 :nth-child(3) {
+        display: none;
+    }
+}
+
+@media(max-width:768px){
+    .gallery #first-gallery div:nth-child(1),
+    .gallery #first-gallery div:nth-child(3),
+    .gallery #second-gallery div:nth-child(1),
+    .gallery #second-gallery div:nth-child(3) {
+        display: none;
+    }
+
+    .gallery .btn {
+        padding: .8rem 0;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .experience h3 {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 26px;
+        padding-bottom: 1.5rem;
+    }
+
+    .experience #experience-word2 {
+        margin-top: 2rem;
+    }
+    .testimonial .second div:nth-child(1) {
+        padding-bottom: 1rem;
+    }
+    .testimonial .second div:nth-child(3) {
+        display: none;
+    }
+
+    .spa-time h2,
+    .gallery h2,
+    .testimonial #first h2,
+    .professional #first h2 {
+        padding-bottom: 2rem;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        color: var(--primary-color);
+    }
+}
+

@@ -1,0 +1,209 @@
+*{  margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 50px;
+    color: #181A49;
+ }
+ h1{
+     font-size: 50px;
+ }
+ p{
+    font-family: 'DM Sans', sans-serif;
+ }
+ 
+ .btn{
+     font-family: 'DM Sans', sans-serif;
+     background-color:#181A49!important ;
+     color: white!important;
+ }
+nav a{
+    color: #181A49;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+}
+.navbar-brand{
+    font-family: 'Dancing Script', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150px;
+    color: #181A49;
+}.navbar-collapse{
+    text-align: center;
+}
+.nav-item .active{
+    color: #0f102c;
+}
+
+/*to position navbar on top of corousel*/
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+ }
+ 
+ .navbar-wrapper .container {
+    padding-left: 0;
+    padding-right: 0;
+ }
+ 
+ .navbar-wrapper .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+ 
+ 
+ /*to position navbrand text verticaly- one on top of the other*/
+ #logo {
+	vertical-align:middle;
+}
+.navbar-brand span {
+	font-size:2rem;
+	line-height:1.2;
+	font-weight: bold;
+	display:inline-block;
+	vertical-align:middle;
+    padding:0 0 0 15px;
+    
+}
+.navbar-brand b {
+    font-family: 'DM Sans', sans-serif;
+	display:block;
+	font-size:50%;
+    line-height:1;
+    font-weight: 200;
+}
+.navbar-nav {
+	margin-left:auto;
+}
+/*Customize corousel*/
+.carousel-indicators li {
+    /*changing indicators to dots*/
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat;
+    background-size: cover;
+}
+.carousel-caption{
+    bottom: 220px;
+}
+.carousel-caption h5{
+font-size: 45px;
+margin-top: 25px;
+font-family: 'Dancing Script', cursive;
+color: white;
+}
+.carousel-caption p{
+    font-family: 'DM Sans', sans-serif; 
+}
+
+/*border image for services section*/
+.card{ 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(/images/gemmaweaves1.png) 30 stretch;
+  }
+.card-deck{
+    margin: 0px 80px;
+}
+.form-group{
+    margin: 0px 80px;
+}
+/*zindex*/
+#services{
+    position: relative;
+    z-index: 1;
+}
+.vector{
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    width: 100%;
+}
+/*Explore section*/
+.exploreimg{
+    /*background-image: url(../images/gemmaweaves-explore.png) center center/cover no-repeat;*/
+    background-image: url(../images/gemmaweaves-explore.png);
+    height: 80vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Booking section*/
+#booking div{
+    font-family:'DM Sans', sans-serif;
+    color: #181A49;
+    font-size: 20px;
+    
+}
+/*testimonialCorousel*/
+.book h2{
+font-family: 'Dancing Script', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 100px;
+}
+
+/*Blog section*/
+.info{
+    margin: 0px 80px;
+    
+}
+#blog a{
+font-family: 'DM Sans', sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 52px;
+color: #181A49;
+text-decoration: none;
+}
+/*footer*/
+.footer-info{
+    background: #090A16;
+    color: white;
+}
+.footer-info h1{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.copyright{
+    background-color: #181924;
+    color: white;
+    padding: 20px 0px;      
+}
+/*Responsiveness*/
+@media only screen and (max-width: 767px){
+    .navbar ul {
+        display: block!important;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-wrapper {
+      margin-top: 20px;
+    }
+  }

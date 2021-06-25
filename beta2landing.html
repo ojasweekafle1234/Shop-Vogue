@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SHOP VOGUE</title>
+  
+  <link rel="stylesheet" href="./assests/bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/book.css">
+  <link rel="stylesheet" media="screen and (max-width: 500px)" href="css/mobile.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+</head>
+
+<body>
+  <!----------------------------------------------------------------------------------------------------------------------------
+                                                    NAVIGATION BAR
+  ------------------------------------------------------------------------------------------------------------------------------>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img style="height: 50px; width: 100px" src="C:\Users\DELL\Desktop\Shop-Vogue\images\logo2.png"
+          alt="navbar brand"></a>
+      <button style="outline: none" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a href="C:\Users\DELL\Desktop\Shop-Vogue\index.html" class="nav-link" id="logout">LOG OUT</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  <!--------------------Showcase section ---------------->
+  <section class="showcase">
+  </section>
+
+  <!-------------------------------------------------------------------------------------------------------------------------------------------
+                                                          ABOUT SECTION
+  ---------------------------------------------------------------------------------------------------------------------------------------------> 
+  <section class="about container">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="showcase-imgA" src="img/shocaseabs1.svg" alt="Showcase image 1">
+        <img class="showcase-imgB" src="img/showcaseabs2.svg" alt="Showcase image 2">
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-4 font-weight-bold">ABOUT US</h2>
+        <p style="line-height: 2rem"> Shop Vogue is an well reputed beauty salon and online store where you can find the best cosmetic brands. Worldwide Shipping. Shop with us!Discover the latest in beauty. Explore our unrivaled selection of makeup, skin care, fragrance and more from classic and emerging brands.
+          The Ultimate Beauty and Destination, with the biggest brands in luxury skincare.We offer customers prestige & mass cosmetics and always prioritize your demands.Enjoy FREE EXPRESS Shipping & Afterpay on our curated collection of many brands.
+          Our beauty salon website will help you build your own beauty salon website with the useful elements and design you get as inspiration.With so much information available it is bit confusing figuring out how to take care for our skin. </p>
+        <button class="mt-4 font-weight-bold">Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------------------------------------------------------------------------------------------------------------------------------
+                                                  OUR SERVICES AND BOOKING SECTION
+  ----------------------------------------------------------------------------------------------------------------------------------------------->
+  <!---------- Button modal using bootsrap-------->
+
+ <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">BOOKING FORM</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <form id="booking-form">
+          <div class="input-field">
+              <label for="selectService"><b>Select the service</b></label><br>
+                  <select class="form-control" id="selectService" name="selectService" required>
+                    <option hidden disabled selected value>Booked Services</option>
+                    <option>Bridal Makeup/$ 3000</option>
+                    <option>Professional Makeup/$2500</option>
+                    <option>Makeup Lesson/$ 2500</option>
+                    <option>Makeup Products/$ 1500</option>
+                  </select><br>
+            <p>
+              <label for="name"><b>Name</b></label>
+              <input type="text" id="name" name="name" placeholder="Enter Name" name="name" required style="width: 100% ;" ><br>
+            </p>
+            <p>
+              <label for="email"><b>Email</b></label>
+              <input type="text" id="email" name="email"placeholder="Enter Email" name="name" required style="width: 100% ;"><br>
+            </p>
+            <p>
+              <label for="phone"><b>Phone</b></label>
+              <input type="tel" id="phoneno" name="phoneno" pattern="[9][8][0-9]{8}" placeholder="(98XXXXXXXX)" style="width: 100% ;" /><br>
+            </p>  
+            <p>    
+              <label for="address"><b>Address</b></label>
+              <input type="text" id="address" name="address" placeholder="Enter your address" required minlength="6"  maxlength="1000" style="width: 100% ;"/><br>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" id="confirmBook">Confirm Booking</button>
+          </div>
+          <div class="alert">Your booking has been done..</div>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+     
+    <!-------------------------------------------------------------------------------------------------------------------------------------
+                        OUR SERVICES SECTION
+     ------------------------------------------------------------------------------------------------------------------------------------->
+
+  <section class="services container">
+    <h2 class="text-center font-weight-bold">OUR SERVICES</h2>
+    <p class="text-center mx-auto" style="width: 90vw; max-width: 500px">We have been continuously viewing your demands. Your interest is our priority. Please feel free to shop. </p>
+    <div class="row">
+      <div class="col-md-6 col-lg-3 mt-5 text-center">
+        <div class="content">
+          <img src="img/bridalmakeup.png" alt="bridalmakeup">
+          <p class="mt-5">Bridal Makeup</p>
+          <p>$3000</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mt-5 text-center">
+        <div class="content">
+          <img src="img/professionalmakeup.png" alt="professionalmakeup">
+          <p class="mt-5">Professional Makeup</p>
+          <p>$2500</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mt-5 text-center">
+        <div class="content">
+          <img src="img/makeuplessons.png" alt="makeuplessons">
+          <p class="mt-5">Makeup Lessons</p>
+          <p>$2500</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> Book Now</button>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mt-5 text-center">
+        <div class="content">
+          <img src="img/makeupproducts.png" alt="makeupproducts">
+          <p class="mt-5">Makeup Products</p>
+          <p>$1500</p>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Our Experts -->
+  <section class="experts container">
+    <h2 class="text-center font-weight-bold">MEET OUR EXPERTS</h2>
+    <div class="row">
+      <div class="col-md-4 text-center mt-5">
+        <img src="img/kellystone.png" alt="kelly stone">
+        <p class="mt-3">Kelly Stone</p>
+        <p class="font-weight-bold">Makeup Artist</p>
+      </div>
+      <div class="col-md-4 text-center mt-5">
+        <img src="img/florasilver.jpg" alt="flora silver">
+        <p class="mt-3">Flora Silver</p>
+        <p class="font-weight-bold">Makeup Artist</p>
+      </div>
+      <div class="col-md-4 text-center mt-5">
+        <img src="img/megduff.png" alt="meg duff">
+        <p class="mt-3">Meg Duff</p>
+        <p class="font-weight-bold">Makeup Artist</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="container gallery">
+    <h2 class="text-center font-weight-bold">GALLERY</h2>
+    <div class="row">
+      <div class="col-md-4 mt-5">
+        <img src="img/gallery1.png" alt="gallery image 1">
+      </div>
+      <div class="col-md-4 mt-5">
+        <img src="img/gallery2.png" alt="gallery image 2">
+      </div>
+      <div class="col-md-4 mt-5">
+        <img src="img/gallery3.png" alt="gallery image 3">
+      </div>
+      <div class="col-md-4 mt-5">
+        <img src="img/gallery4.png" alt="gallery image 4">
+      </div>
+      <div class="col-md-4 mt-5">
+        <img src="img/gallery5.png" alt="gallery image 5">
+      </div>
+      <div class="col-md-4 mt-5">
+        <img src="img/gallery6.png" alt="gallery image 6">
+      </div>
+    </div>
+    <button class="d-block mx-auto mt-5 font-weight-bold">Load More</button>
+  </section>
+
+  <!-- Our Blog -->
+  <section class="container blog">
+    <h2 class="text-center font-weight-bold">OUR BLOG</h2>
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6">
+        <img src="img/blogfoundation.png" alt="blog foundation">
+      </div>
+      <div class="col-md-6">
+        <div class="about-product">
+          <h5 class="font-weight-bold">5 Great Foundation For Your Skin Type</h5>
+          <p>Foundation is a liquid or powder makeup applied to the face to create an even, uniform color to the complexion, cover flaws and, sometimes, to change the natural skin tone. 
+            Some foundations also function as a moisturizer, sunscreen, astringent or base layer for more complex cosmetics. Always choose right foundation as per your skin tone. </p>
+          <a href="#" class="font-weight-bold">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6">
+        <img src="img/makeupbrushes.png" alt="makeup brushes">
+      </div>
+      <div class="col-md-6">
+        <div class="about-product">
+          <h5 class="font-weight-bold">3 Ways to Store Makeup Brushes</h5>
+          <p>To store your brushes at home, place them in a brush holder, organiser, or stackable drawers. These make your vanity or dresser look pretty and help you to easily locate
+             your brushes. If you are travelling, opt for a compact bag, wrap, or brush book to protect your brushes.According to Good Housekeeping, even well-maintained cosmetic brushes 
+             that are cleaned regularly should be replaced every three months, or sooner.</p>
+          <a href="#" class="font-weight-bold">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials section -->
+  <section class="testimonials container">
+    <h2 class="font-weight-bold text-center">TESTIMONIALS</h2>
+    <div class="row">
+      <div class="col-md-2 model-description text-center">
+        <p class="mb-1">Jane</p>
+        <p class="font-weight-bold">Model</p>
+      </div>
+      <div class="col-md-10">
+        <p>Shope Vogue been a real love of mine for as long as I can remember. I never even knew that you can really turn your passion into a business, you know. Now I just feel so blessed every day to wake up and use the products available here. It’s amazing!</p>
+      </div>
+      <img src="img/janemodel.png" alt="Jane model">
+    </div>
+    <div class="row">
+      <div class="col-md-2 model-description text-center">
+        <p class="mb-1">Betty</p>
+        <p class="font-weight-bold">Fashion Blogger</p>
+      </div>
+      <div class="col-md-10">
+        <p>Shop Vogue is the best place I have encountered regarding beauty services. While makeup and skincare blogs launch all the time, we continue to go back to certain experts over and over again, whether that's because they've been pillars of the beauty community for a long time or their expert knowledge is simply unrivaled.</p>
+      </div>
+      <img src="img/bettyblogger.png" alt="Betty Blogger">
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section class="container contact">
+    <h2 class="font-weight-bold text-center mb-5">CONTACT US</h2>
+    <div class="row d-flex align-items-center">
+      <div class="col-md-8">
+        <!-- Images section  -->
+          <div class="row">
+            <div class="column">
+              <img src="images/handphone1.png" alt="ring" style="height:78.5%" >
+            </div>
+            <div class="column">
+              <img src="images/handphone.png " alt="hand" style="width:100%">
+            </div>
+        </div>
+
+        <div class="d-md-flex align-items-center justify-content-center">
+          <div id="location">
+            <img src="img/map-page.jpg">
+          </div>
+          <div class="address">
+            <p>200 Local Street, <br> Gongabu ,Kathmandu, Nepal<br></p>
+            <p>Phone +977 0 0000 0000 <br> Email - shopvogue2020@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name1" required>
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email1" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone" pattern="[9][8][0-9]{8}" placeholder="(98XXXXXXXX)" required>
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Book a Session</a></li>
+            <li><a href="#">Order a MakeUp Pack</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Track your Order</a></li>
+            <li><a href="#">Lodge a Complaint</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <form>
+            <div class="d-flex">
+              <input type="text">
+              <button>Submit</button>
+            </div>
+            <p class="mt-3">Subcribe to our newsletter <br> on sales & events</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook" ></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="copyright text-center mt-3">All Rights Reserved. SHOP VOGUE 2020 </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  
+  
+    
+
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+<script src="js/book.js"></script>
+<script src="js/contact.js"></script>
+
+<script>
+  $('#myModal').on('shown.bs.modal', function () {
+$('#myInput').trigger('focus')
+})
+</script>
+
+
+</body>
+
+</html>
