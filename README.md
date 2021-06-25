@@ -7,7 +7,7 @@ Admin have access to see the users who have logged in to the system. The online 
 
 TOOLS TO BE USED:
 
-HTML and CSS : To implement the Frontend portion of structuring and styling the website.
-Bootstrap: Designing the layout.
-Javascript and jQuery : To modify website content and make it behave in different ways in response to a user's actions . Used as a backend language.
-Database: Firebase
+1. HTML and CSS : To implement the Frontend portion of structuring and styling the website.
+2. Bootstrap: Designing the layout.
+3. Javascript and jQuery : To modify website content and make it behave in different ways in response to a user's actions . Used as a backend language.
+4. Database: Firebase
